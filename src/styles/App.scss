@@ -1,0 +1,12 @@
+html{
+    // background-image: url("./background.jpg");
+    background: linear-gradient(to bottom, #7292b3, #28313b); /* Gradient from black (#333333) to grey (#888888) */
+    font-family: 'Ubuntu';
+    color: white;
+    @media (max-width: 768px) {
+        width: 1000px;
+      }
+}
+
+.app{
+}

@@ -1,0 +1,38 @@
+header {
+    background-color: #fff2f2;
+    transition: background-color 0.3s, backdrop-filter 0.3s;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; 
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        margin: 0 1rem;
+  
+        a {
+          text-decoration: none;
+          color: #696969;
+          padding: 0.5rem 1rem;
+          transition: all 0.2s ease;
+          &:hover {
+            color: #000000;
+          }
+        }
+      }
+    }
+    // @media (max-width: 768px) {
+    //   flex-direction: column; /* For small screens, stack the header elements vertically */
+    //   padding: 0.5rem 1rem; /* Reduce padding for a more compact layout */
+    // }
+  }
+
+  
