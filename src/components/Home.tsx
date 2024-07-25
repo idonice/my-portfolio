@@ -9,9 +9,9 @@ const Home: React.FC = () => {
             <div className="content">
                 <h2>Hello :)</h2>
                 <h1>I'm Ido Nice</h1>
-                <h3>Frontend Developer</h3>
+                <h4>Software Developer</h4>
                 <p>
-                    A software developer specializing in frontend,<br />develop well-designed, smart and innovative applications.
+                    I'm developing well-designed, smart and innovative applications.
                 </p>
             </div>
             <div className="image-container">

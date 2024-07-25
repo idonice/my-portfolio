@@ -62,7 +62,7 @@
     }
 
     .image-container {
-        order: 1;
+        order: -1;
     }
 
     .image-container img {
