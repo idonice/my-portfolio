@@ -24,13 +24,13 @@ const Contact: React.FC = () => {
                     <span className="contact-label">WhatsApp</span>
                 </div>
                 <div className="contact-item">
-                    <a href="mailto:your-email@example.com" title="Email">
+                    <a href="mailto:idonice3@gmail.com" title="Email">
                         <FaEnvelope style={{ color: '#d44638' }} onClick={() => { setEmailClicked(!emailClicked) }} />
                     </a>
                     <span className="contact-label">{emailClicked ? 'idonice3@gmail.com' : 'Email'}</span>
                 </div>
                 <div className="contact-item">
-                    <a href="tel:+1234567890" title="Phone">
+                    <a href="tel:+972504697264" title="Phone">
                         <FaPhone style={{ color: '#4a4a4a' }} onClick={() => { setPhoneClicked(!phoneClicked) }} />
                     </a>
                     <span className="contact-label">{phoneClicked ? '050-4697264' : 'Phone'}</span>
