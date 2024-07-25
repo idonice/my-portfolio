@@ -59,6 +59,7 @@
 @media (max-width: 768px) {
     .home {
         flex-direction: column;
+        justify-content: normal;
     }
 
     .image-container {
