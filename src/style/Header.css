@@ -29,6 +29,18 @@
     color: #696969;
 }
 
+.cv {
+    border: 1px solid #e8c5c5;
+    /* background-color: #fff; */
+    padding: 3px 0;
+    border-radius: 8px;
+}
+
+.header li {
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
     .header {
         font-size: 12px;
