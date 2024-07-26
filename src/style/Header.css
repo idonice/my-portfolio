@@ -45,4 +45,8 @@
     .header {
         font-size: 12px;
     }
+
+    .header nav a {
+        margin: 0 5px;
+    }
 }
