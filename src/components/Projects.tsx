@@ -11,10 +11,10 @@ const Projects: React.FC = () => {
         <section id="projects" className="projects">
             <h2>Projects</h2>
             <div className="project-list">
-                <Project name='Real-time Tic-Tac-Toe' link='https://www.google.com'>
+                <Project name='Real-time Tic-Tac-Toe' link=''>
                     <GiTicTacToe size={80} color='black' />
                 </Project>
-                <Project name='Smart meal planner' link='https://www.google.com'>
+                <Project name='Smart meal planner' link=''>
                     <BsEggFried size={80} color='yellow' />
                 </Project>
 

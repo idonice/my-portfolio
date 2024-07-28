@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
 
     return (
         <section id='contact' className="contact">
-            <h2>Contact</h2>
+            <h2>Contact me</h2>
             <div className="contact-icons">
                 <div className="contact-item">
                     <a href="https://www.linkedin.com/in/ido-nice" target="_blank" rel="noopener noreferrer" title="LinkedIn">
