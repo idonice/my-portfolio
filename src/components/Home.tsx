@@ -12,7 +12,7 @@ const Home: React.FC = () => {
                     <h1>I'm Ido Nice</h1>
                     <h4>Software Developer</h4>
                     <p>
-                        I'm developing well-designed, smart and innovative applications.
+                        I'm excited to seek new challenges and join a dynamic team to drive innovation together.
                     </p>
                 </div>
                 <div className="image-container">
