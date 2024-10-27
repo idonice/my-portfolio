@@ -38,14 +38,18 @@ h6 {
 
 .sections {
   overflow: auto;
-  max-height: 100%;
 }
 
 .sections section {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  height: calc(100vh - 100px);
   justify-content: center;
+}
+
+.about,
+.projects,
+.contact {
+  flex-direction: column;
 }
 
 .sections::-webkit-scrollbar {
@@ -55,6 +59,11 @@ h6 {
 @media (max-width: 768px) {
   .layout {
     padding: 20px;
+  }
+
+  .sections section {
+    padding-top: 70px;
+    justify-content: start;
   }
 
   .main {

@@ -11,9 +11,7 @@
 
 .project-list {
     display: flex;
-    width: 100%;
-    min-height: 300px;
-    padding: 20px;
+    margin-top: 20px;
     justify-content: center;
     box-sizing: border-box;
     gap: 30px;
@@ -42,8 +40,14 @@
 
 .project-name {
     margin-top: 10px;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.project-description {
+    font-size: 9px;
+    margin-top: 2px;
+    font-weight: 400;
 }
 
 @media (max-width: 768px) {

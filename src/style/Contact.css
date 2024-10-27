@@ -1,6 +1,5 @@
 .contact {
     background-color: #f4f4f4;
-    min-height: 100vh;
 }
 
 .contact h2 {
@@ -36,11 +35,6 @@
 }
 
 @media (max-width: 768px) {
-
-    .contact {
-        padding: 80px 10px;
-    }
-
     .contact-item svg {
         width: 40px;
         height: 40px;
