@@ -7,7 +7,7 @@ import { ReactComponent as MongoDBIcon } from '../assets/icons/mongodb.svg';
 import '../style/About.css';
 
 const Skills: React.FC = () => {
-    return <div className='skills'>
+    return <div className='section skills'>
         <FaReact style={{ color: '#61dafb' }} title="React" />
         <IoLogoHtml5 style={{ color: '#e34f26' }} title="HTML5" />
         <IoLogoCss3 style={{ color: '#1572b6' }} title="CSS3" />

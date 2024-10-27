@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
     const [phoneClicked, setPhoneClicked] = useState(false);
 
     return (
-        <section id='contact' className="contact">
+        <section id='contact' className="section contact">
             <h2>Contact me</h2>
             <div className="contact-icons">
                 <div className="contact-item">

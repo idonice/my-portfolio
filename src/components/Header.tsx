@@ -8,8 +8,8 @@ const Header: React.FC = () => {
         if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-
     };
+
     return (
         <header className="header">
             <nav>

@@ -8,10 +8,10 @@ import Project from './Project';
 
 const Projects: React.FC = () => {
     return (
-        <section id="projects" className="projects">
+        <section id="projects" className="section projects">
             <h2>Projects</h2>
             <div className="project-list">
-                <Project name='Real-time Tic-Tac-Toe' link='https://tic-tac-g1plz2v4e-idonices-projects.vercel.app'>
+                <Project name='Real-time Tic-Tac-Toe' link='https://tic-tac-toe-acvm.onrender.com/'>
                     <GiTicTacToe size={80} color='black' />
                 </Project>
             </div>
