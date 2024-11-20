@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
         <section id="projects" className="section projects">
             <h2>Projects</h2>
             <div className="project-list">
-                <Project name='Real-time Tic-Tac-Toe' description='React | Node  | Socket.io' link='https://tic-tac-toe-acvm.onrender.com/'>
+                <Project name='Real-time Tic-Tac-Toe' description='React | Node  | Socket.io' link='https://web-production-2d67.up.railway.app/'>
                     <GiTicTacToe size={80} color='black' />
                 </Project>
             </div>
