@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../assets/images/logo.png";
+import yoopLogo from "../assets/images/yoopLogo.png";
+import urlScannerLogo from "../assets/images/urlScannerLogo.png";
 
 import "../style/Projects.css";
 import { GiTicTacToe } from "react-icons/gi";
@@ -28,8 +29,25 @@ const Projects: React.FC = () => {
               backgroundColor: "#0088ed",
               height: "80px",
               width: "80px",
-              backgroundImage: `url(${logo})`,
+              backgroundImage: `url(${yoopLogo})`,
               backgroundSize: "80%",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              borderRadius: "50%",
+            }}
+          />
+        </Project>
+        <Project
+          name="URL Scanner web app"
+          description="Next.js | Puppeteer | Redis"
+          comingSoon={true}
+        >
+          <div
+            style={{
+              height: "80px",
+              width: "80px",
+              backgroundImage: `url(${urlScannerLogo})`,
+              backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               borderRadius: "50%",

@@ -19,6 +19,7 @@ const Project: React.FC<ProjectProps> = ({
   children,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [comingSoonRender, setComingSoonRender] = useState(false);
 
   return (
     <>
@@ -28,11 +29,14 @@ const Project: React.FC<ProjectProps> = ({
         rel="noopener noreferrer"
         className="project-link"
       >
-        <div className="project">
+        <div
+          className="project"
+          onClick={() => setComingSoonRender(!comingSoonRender)}
+        >
           {children}
           <span className="project-name">{name}</span>
           <span className="project-description">{description}</span>
-          {comingSoon && (
+          {comingSoon && comingSoonRender && (
             <span className="project-description">
               coming soon |{" "}
               <a
