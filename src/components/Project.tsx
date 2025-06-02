@@ -62,10 +62,12 @@ const Project: React.FC<ProjectProps> = ({
             >
               &times;
             </button>
-            <video width="100%" height="auto" controls autoPlay>
-              <source src={previewVideoUrl} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <div className="video-container">
+              <video controls autoPlay>
+                <source src={previewVideoUrl} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       )}

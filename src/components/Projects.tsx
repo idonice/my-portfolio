@@ -1,6 +1,8 @@
 import React from "react";
 import yoopLogo from "../assets/images/yoopLogo.png";
 import urlScannerLogo from "../assets/images/urlScannerLogo.png";
+import urlScannerPreview from "../assets/urlScannerPreview.mov";
+import yoopPreview from "../assets/yoopPreview.mp4";
 
 import "../style/Projects.css";
 import { GiTicTacToe } from "react-icons/gi";
@@ -23,6 +25,7 @@ const Projects: React.FC = () => {
           name="YOOP - Connect player together"
           description="Next.js"
           comingSoon={true}
+          previewVideoUrl={yoopPreview}
         >
           <div
             style={{
@@ -41,6 +44,7 @@ const Projects: React.FC = () => {
           name="URL Scanner web app"
           description="Next.js | Puppeteer | Redis"
           comingSoon={true}
+          previewVideoUrl={urlScannerPreview}
         >
           <div
             style={{
