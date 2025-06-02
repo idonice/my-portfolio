@@ -28,15 +28,11 @@ const Projects: React.FC = () => {
           previewVideoUrl={yoopPreview}
         >
           <div
+            className="project-img"
             style={{
-              backgroundColor: "#0088ed",
-              height: "80px",
-              width: "80px",
-              backgroundImage: `url(${yoopLogo})`,
               backgroundSize: "80%",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              borderRadius: "50%",
+              backgroundColor: "#0088ed",
+              backgroundImage: `url(${yoopLogo})`,
             }}
           />
         </Project>
@@ -47,14 +43,9 @@ const Projects: React.FC = () => {
           previewVideoUrl={urlScannerPreview}
         >
           <div
+            className="project-img"
             style={{
-              height: "80px",
-              width: "80px",
               backgroundImage: `url(${urlScannerLogo})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              borderRadius: "50%",
             }}
           />
         </Project>

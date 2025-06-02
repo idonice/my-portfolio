@@ -22,7 +22,7 @@ const Project: React.FC<ProjectProps> = ({
   const [comingSoonRender, setComingSoonRender] = useState(false);
 
   return (
-    <>
+    <div style={{ width: "100%" }}>
       <a
         href={link}
         target="_blank"
@@ -71,7 +71,7 @@ const Project: React.FC<ProjectProps> = ({
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
