@@ -93,31 +93,45 @@
   }
 }
 
-.modal-content {
-  position: relative;
-  background: #000;
-  border-radius: 12px;
-  max-width: 90vw;
-  max-height: 80vh;
-  width: 100%;
-  overflow: hidden;
-  padding: 1rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.video-container {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  max-height: 100%;
-}
-
-.video-container video {
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.yoop-users {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.app-nav {
+  width: 100px;
+  border-radius: 20px;
+  background-color: blue;
+  color: white;
+
+  padding: 8px 10px;
+  font-size: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-decoration: none;
 }

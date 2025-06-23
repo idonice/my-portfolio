@@ -1,55 +1,89 @@
-import React from "react";
+import React, { useState } from "react";
 import yoopLogo from "../assets/images/yoopLogo.png";
 import urlScannerLogo from "../assets/images/urlScannerLogo.png";
-import urlScannerPreview from "../assets/urlScannerPreview.mov";
-import yoopPreview from "../assets/yoopPreview.mp4";
-
-import "../style/Projects.css";
 import { GiTicTacToe } from "react-icons/gi";
+import "../style/Projects.css";
 
 import Project from "./Project";
+import ProjectModal from "./ProjectModal";
+import YoopDescription from "./YoopDescription";
+import TicTacToeDescription from "./TicTacToeDescription";
 
 const Projects: React.FC = () => {
+  const [modalData, setModalData] = useState<{
+    title: string;
+    children: React.ReactNode;
+  } | null>(null);
+
+  const openModal = (title: string, children: React.ReactNode) => {
+    setModalData({ title, children });
+  };
+
+  const closeModal = () => setModalData(null);
+  const yoopDescription =
+    "אפליציה לחיבור שחקנים ותיאום מגרשים. משתמשים לדוגמה: ";
   return (
     <section id="projects" className="section projects">
       <h2>Projects</h2>
       <div className="project-list">
-        <Project
-          name="Real-time Tic-Tac-Toe"
-          description="React | Node | Socket.io"
-          link="https://tic-tac-toe-acvm.onrender.com/"
+        <div
+          style={{ width: "100%" }}
+          onClick={() =>
+            openModal("YOOP - Connect player together", <YoopDescription />)
+          }
         >
-          <GiTicTacToe size={80} color="black" />
-        </Project>
-        <Project
-          name="YOOP - Connect player together"
-          description="Next.js"
-          comingSoon={true}
-          previewVideoUrl={yoopPreview}
+          <Project name="YOOP - Connect player together" description="Next.js">
+            <div
+              className="project-img"
+              style={{
+                backgroundSize: "80%",
+                backgroundColor: "#0088ed",
+                backgroundImage: `url(${yoopLogo})`,
+              }}
+            />
+          </Project>
+        </div>
+        <div
+          style={{ width: "100%" }}
+          onClick={() =>
+            openModal("Real-time Tic-Tac-Toe", <TicTacToeDescription />)
+          }
         >
-          <div
-            className="project-img"
-            style={{
-              backgroundSize: "80%",
-              backgroundColor: "#0088ed",
-              backgroundImage: `url(${yoopLogo})`,
-            }}
-          />
-        </Project>
-        <Project
-          name="URL Scanner web app"
-          description="Next.js | Puppeteer | Redis"
-          comingSoon={true}
-          previewVideoUrl={urlScannerPreview}
+          <Project
+            name="Real-time Tic-Tac-Toe"
+            description="React | Node | Socket.io"
+          >
+            <GiTicTacToe size={80} color="black" />
+          </Project>
+        </div>
+
+        <div
+          style={{ width: "100%" }}
+          onClick={() => openModal("URL Scanner web app", <p>coming soon</p>)}
         >
-          <div
-            className="project-img"
-            style={{
-              backgroundImage: `url(${urlScannerLogo})`,
-            }}
-          />
-        </Project>
+          <Project
+            name="URL Scanner web app"
+            description="Next.js | Puppeteer | Redis"
+          >
+            <div
+              className="project-img"
+              style={{
+                backgroundImage: `url(${urlScannerLogo})`,
+              }}
+            />
+          </Project>
+        </div>
       </div>
+
+      {modalData && (
+        <ProjectModal
+          isOpen={true}
+          onClose={closeModal}
+          title={modalData.title}
+        >
+          {modalData.children}
+        </ProjectModal>
+      )}
     </section>
   );
 };
